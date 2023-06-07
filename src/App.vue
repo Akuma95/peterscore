@@ -19,7 +19,7 @@ export default {
 @import "assets/style/variables.scss";
 
 html {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   text-align: start;
@@ -57,11 +57,12 @@ body {
   flex-wrap: wrap;
 
   .innerBox {
-      max-height: 100%;
+      max-height: 550px;
       flex: 0 0 50%;
   }
   @media (max-width: $mobileView) {
     .innerBox {
+      max-height: 100%;
       flex: 0 0 100%;
     }
   }
@@ -69,5 +70,64 @@ body {
 
 a {
   color: rgb(255, 255, 255);
+}
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #bb1a68 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #bb1a68;
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+  }
+
+
+.animLeft {
+  animation: MoveInLeft 1s;
+}
+.animRight {
+  animation: MoveInRight 1s;
+}
+.animGrowIn {
+  animation: GrowIn 1s;
+}
+
+@keyframes MoveInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes MoveInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes GrowIn {
+    0% {
+      font-size: 0%;
+      transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 </style>

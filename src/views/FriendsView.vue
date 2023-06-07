@@ -1,5 +1,6 @@
 <template>
-    <div></div>
+  <h1>Friends</h1>
+  <h2 class="animLeft">***WIP***</h2>
 </template>
   
   <script>

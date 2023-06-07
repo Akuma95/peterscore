@@ -1,7 +1,7 @@
 <template>
   <h1>Engine</h1>
   <div class="container scrollBox">
-    <div class="box">
+    <div class="box animLeft">
       <div class="innerBox">
         <video autoplay="" muted="" loop="" class="videoddm">
           <source src="http://www.peterscore.com/Engine/DanceDanceMusic.mp4" type="video/mp4">
@@ -17,7 +17,7 @@ If everything works like planned, I want to move to a own C# game engine.</p>
       </div>
     </div>
     
-    <div class="box">
+    <div class="box animRight">
       <div class="innerBox">
           <p>
             The PeterEngine is currently a class library build in C#.

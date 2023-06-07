@@ -24,9 +24,6 @@
         transition: padding-left 1s;
         text-decoration: none;
     }
-    .menu {
-        animation: MoveInLeft 1s;
-    }
 
     .item {
         width: 50%;
